@@ -5,6 +5,463 @@ button blue: #4285F4
 titles black: #191817
 paragraph black: #000000
 paragraph yellow: #ECB12F
+main: #F3EAE2
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* --------------------------------------- */
+/* -------------Mobile first------------- */
+/* ------------------------------------- */
+/* --------------Main------------------ */
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* width: 390px; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* --------------Nav------------------- */
+
+nav{
+    display: flex;
+    background-color: #540B51;
+    padding: 40px 15px;
+    /* width: 100%; */
+    /* position: fixed;
+    top: 0; */
+}
+
+.iconos-grises button{
+    background-color: #540B51;
+}
+
+#logo-slack{
+    width: 50%;
+}
+
+.iconos-grises {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #540B51;
+    cursor: pointer;
+    border-width: 0;
+}
+
+#search{
+    background-color: #540B51;
+}
+
+#icon-menu{
+    background-color: #540B51;
+}
+
+/* --------------Menu Buger----------- */
+
+.menu-items{
+    text-align: center;
+    position: absolute;
+    padding: 5rem;
+    margin-top: -6rem;
+    margin-left: -1rem;
+    top: 13rem;
+    left: 7.5rem;
+    list-style: none;
+    opacity: 0;
+    font-size: 2rem;
+    border: 4px solid black;
+    background-color: black;
+    border-radius: 0.25em;
+    transform: translateX(-10%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
+    z-index: 50;
+}
+
+.menu-items li{
+    color: white;
+    padding: 0.5rem;
+}
+
+.menu-items li a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+.menu-items li a:hover{
+    color: rgb(174, 174, 174);
+}
+
+/* .check {
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0;
+    z-index: 3;
+}
+
+.check:hover {
+    cursor: pointer;
+}
+
+.check:checked~.menu-items {
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
+} */
+
+/* --------------Header---------------- */
+.temporal {
+    width: 90%;
+    height: auto;
+}
+
+header{
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.texto{
+    width: 400px;
+}
+
+h1{
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    font-size: 200%;
+    max-width: 100%;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto p{
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+.texto p span{
+    color: #ECB12F
+}
+
+.sing-up{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+#with-email{
+    height: 50px;
+    width: 90%;
+    color: #540B51;
+    font-size: larger;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5%;
+}
+
+.with-Gooogle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(66, 133, 244);
+    width: 90%;
+    border-radius: 5%;
+    text-transform: uppercase;
+}
+
+.with-Gooogle span{
+    color: white;
+    text-align: left;
+    justify-content: center;
+    position: relative;
+    right: 100px;
+    text-transform: uppercase;
+    height: 50px;
+    top: 18px;
+}
+
+#logo-google{
+    width: 30px;
+    text-align: left;
+    background-color: white;
+    margin: 5px;
+}
+
+.hero-img{
+    width: 100%;
+    display: flex;
+}
+
+.hero-img img{
+    width: 150%;
+    margin-left: -10%;
+}
+
+
+/* --------------Main------------------ */
+
+main {
+    display: flex;
+    background-color: #F3EAE2;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -70px;
+}
+
+main p{
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.trusted-by {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.up-trusted-by {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.base-trusted-by{
+    display: flex;
+    width: 100%;   
+    height: auto; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-white {
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-white h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.bg-white p {
+    font-size: 17px;
+    text-align: center;
+}
+
+.blue-continuado {
+    margin-left: -20%;
+    width: 120%;
+    height: auto;
+}
+
+.green-continuado {
+    margin-left: 16%;
+    width: 90%;
+    height: auto;
+}
+
+.yellow-continuado {
+    width: 105%;
+    height: auto;
+    margin-left: -6%;
+}
+
+.up-trusted-by {
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.imag-continued {
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+}
+
+.imag-continued-green {
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-direction: column-reverse;
+}
+
+.uber{
+    width: 20%;
+    height: auto;
+}
+
+.nasa{
+    width: 16%;
+    height: auto;
+}
+
+.abandb {
+    width: 28%;
+    height: auto;
+}
+
+.circle{
+    width: 12%;
+    height: auto;
+}
+.spotify {
+    width: 40%;
+    height: auto;
+}
+
+.long{
+    width: 50%;
+    height: auto;
+}
+
+.paragraph p{
+    text-align: left;
+}
+
+.purple {
+    color: #ffffff;
+    width: 100%;
+    height: 80%;
+    background-color: #540B51;
+    border-radius: 0 0 30% 30%;
+    padding-bottom: 20%;
+}
+
+.purple h3 {
+    text-align: center;
+    font-size: 180%;
+}
+/* No supe còmo colocar la curva igual al figma tamaño movil
+
+/* -------------Footer----------------- */
+.pre-foot {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.pre-foot ul li {
+    color: rgb(69, 68, 68);
+    font-size: 60%;
+    text-decoration: none;
+}
+/* No supe cómo quitar los puntos al ul li */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+
+}
+
+.slack {
+    width: 10%;
+    margin: 5%;
+}
+
+.where-is-it{
+    background-color: rgb(162, 31, 31);
+    border-color: yellow;
+}
+
+.buttons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark {
+    color: aliceblue;
+    width: 90%; 
+    height: 20%;
+    background-color: #540B51;
+    align-items: center;
+    margin: 2% 5%;
+    padding: 4%;
+}
+
+.light {
+    color: #540B51;
+    width: 90%; 
+    height: auto;
+    background-color: #ffffff;
+    align-items: center;
+    margin: 2% 5%;
+    padding: 4%;
+}
+
+ul li p span {
+    font-size: 3em;
+    color: #540B51;
+}
+
+ul li i {
+    text-decoration: none;
+    width: 30%;
+}
+/*  la clase preestablecida esta declarada como important y no me ha dejado establecer nuevas clases  */
+/*  cómo debe hacerse en estos casos ?  */
+
+#social-media {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.post-foot {
+    margin: 10% 2%;
+    text-align: center;
+    color: grey;
+    font-size: 85%;
+}
